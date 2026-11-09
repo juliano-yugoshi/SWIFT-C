@@ -1,0 +1,13 @@
+{
+  "id_column": "video_id",
+  "text_columns": ["desc_smolvlm"],
+  "label_columns": {
+    "gemini": "sug_gemini",
+    "claude": "sug_claude",
+    "llama": "sug_llama"
+  },
+  "target_column": "category",
+  "delimiter": ",",
+  "encoding": "utf-8-sig",
+  "text_joiner": "\n"
+}

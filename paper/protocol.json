@@ -1,0 +1,141 @@
+{
+  "name": "SWIFT-C HBDA-LLM 2026 experimental protocol",
+  "title": "A Unified Framework for Short Video Clustering with Natural-Language Weak Labels",
+  "dataset": "data/MSRVTT_dados_multillm.zip",
+  "mapping": "configs/msrvtt.json",
+  "synthetic": {
+    "scenarios": [
+      "hard_overlap_fine_grained",
+      "hard_generic_weak_labels",
+      "hard_correlated_llm_errors",
+      "hard_imbalanced_rare_classes",
+      "hard_complementary_weak_labels",
+      "hard_polysemy_cross_category",
+      "hard_missing_outliers",
+      "hard_style_nuisance",
+      "hard_mixed_granularity",
+      "control_labels_random",
+      "control_labels_perfect",
+      "control_labels_all_generic",
+      "control_permuted_wrong_labels",
+      "hard_eac_multimodal_subclusters",
+      "hard_eac_interleaved_moons",
+      "hard_eac_bridge_chains",
+      "hard_heteroscedastic_densities",
+      "hard_shared_label_hubs",
+      "hard_conditional_llm_specialists",
+      "hard_confident_wrong_majority",
+      "hard_labels_help_only_boundaries",
+      "hard_missing_not_at_random",
+      "hard_source_domain_shift",
+      "hard_duplicate_cross_class",
+      "hard_hubness_anisotropy",
+      "hard_many_classes_16",
+      "hard_extreme_imbalance",
+      "hard_hierarchical_granularity",
+      "hard_spurious_eac_consensus"
+    ],
+    "scenario_count": 29,
+    "generation_seeds": [
+      202611303,
+      202611304,
+      202611305
+    ],
+    "clustering_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "sources": "all,each",
+    "k_factors": [
+      1.0
+    ],
+    "methods": [
+      "input",
+      "labels_only",
+      "fusion",
+      "eac_uniform",
+      "eac_adaptive",
+      "spherical_input",
+      "spherical_fusion",
+      "spectral_input",
+      "eac_classic",
+      "eac_multiview",
+      "spectral_fusion",
+      "hdbscan_fusion",
+      "dec_input",
+      "dec_fusion"
+    ],
+    "profile": "full"
+  },
+  "realworld": {
+    "encoder": "Qwen/Qwen3-Embedding-0.6B",
+    "k": [
+      20
+    ],
+    "clustering_seeds": [
+      42,
+      123,
+      2025
+    ],
+    "sources": "all",
+    "methods": [
+      "input",
+      "labels_only",
+      "fusion",
+      "eac_uniform",
+      "eac_adaptive",
+      "spherical_input",
+      "spherical_fusion",
+      "spectral_input",
+      "eac_classic",
+      "eac_multiview",
+      "spectral_fusion",
+      "hdbscan_fusion",
+      "dec_input",
+      "dec_fusion"
+    ],
+    "profile": "full"
+  },
+  "discrete": {
+    "methods": [
+      "exact_vote",
+      "normalized_vote",
+      "discrete_mustlink_kmeans"
+    ],
+    "k": 20,
+    "seeds": [
+      42,
+      123,
+      2025
+    ],
+    "weak_labels": "suggestions only"
+  },
+  "retrieval": {
+    "topk": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "ranking": "cosine similarity of original input text embeddings, restricted to query cluster"
+  },
+  "report": {
+    "clustering_metrics": [
+      "ari",
+      "nmi"
+    ],
+    "retrieval_metrics": [
+      "precision_at_k",
+      "recall_at_k",
+      "map_at_k"
+    ]
+  },
+  "notes": [
+    "The paper reports must-link as the discrete comparison; exact and normalized votes are diagnostics.",
+    "Ground truth is only available to evaluation, never to model fitting.",
+    "The script runs the full 14-method real-world suite; tables in the paper may show only a subset with completed results.",
+    "Scenario-generation and clustering seeds are fixed for reproduction and configurable in general usage.",
+    "The Qwen encoder weights download separately; no pretrained model weights are distributed."
+  ]
+}

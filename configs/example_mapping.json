@@ -1,0 +1,14 @@
+{
+  "id_column": "item_id",
+  "text_columns": [
+    "description"
+  ],
+  "label_columns": {
+    "model_a": "suggestion_a",
+    "model_b": "suggestion_b"
+  },
+  "target_column": "reference_category",
+  "delimiter": ",",
+  "encoding": "utf-8",
+  "text_joiner": "\n"
+}

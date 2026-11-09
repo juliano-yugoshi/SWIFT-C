@@ -1,0 +1,25 @@
+item_id,description,suggestion_a,suggestion_b,reference_category
+item_000,"a person is preparing a pasta dish, clip 0",cooking,meal preparation,food
+item_001,"a cyclist rides along a rural road, clip 0",cycling,outdoor sport,sports
+item_002,"a developer explains a programming example, clip 0",software tutorial,coding,tech
+item_003,"a cook chops vegetables in the kitchen, clip 0",food preparation,recipe,food
+item_004,"a runner trains on a track, clip 0",running,fitness,sports
+item_005,"a presenter demonstrates a new mobile application, clip 0",technology,app demo,tech
+item_006,"a person is preparing a pasta dish, clip 1",cooking,meal preparation,food
+item_007,"a cyclist rides along a rural road, clip 1",cycling,outdoor sport,sports
+item_008,"a developer explains a programming example, clip 1",software tutorial,coding,tech
+item_009,"a cook chops vegetables in the kitchen, clip 1",food preparation,recipe,food
+item_010,"a runner trains on a track, clip 1",running,fitness,sports
+item_011,"a presenter demonstrates a new mobile application, clip 1",technology,app demo,tech
+item_012,"a person is preparing a pasta dish, clip 2",cooking,meal preparation,food
+item_013,"a cyclist rides along a rural road, clip 2",cycling,outdoor sport,sports
+item_014,"a developer explains a programming example, clip 2",software tutorial,coding,tech
+item_015,"a cook chops vegetables in the kitchen, clip 2",food preparation,recipe,food
+item_016,"a runner trains on a track, clip 2",running,fitness,sports
+item_017,"a presenter demonstrates a new mobile application, clip 2",technology,app demo,tech
+item_018,"a person is preparing a pasta dish, clip 3",cooking,meal preparation,food
+item_019,"a cyclist rides along a rural road, clip 3",cycling,outdoor sport,sports
+item_020,"a developer explains a programming example, clip 3",software tutorial,coding,tech
+item_021,"a cook chops vegetables in the kitchen, clip 3",food preparation,recipe,food
+item_022,"a runner trains on a track, clip 3",running,fitness,sports
+item_023,"a presenter demonstrates a new mobile application, clip 3",technology,app demo,tech
